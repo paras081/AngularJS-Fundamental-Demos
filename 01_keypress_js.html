@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS example</title>
+</head>
+<body>
+<input id="edValue" type="text" onInput="edValueKeyPress()"><br>
+<span id="lblValue">The text box contains: </span>
+</body>
+
+<script>
+function edValueKeyPress() {
+    var edValue = document.getElementById("edValue");
+    var s = edValue.value;
+
+    var lblValue = document.getElementById("lblValue");
+    lblValue.innerText = "The text box contains: " + s;
+}
+</script>
+</html>
