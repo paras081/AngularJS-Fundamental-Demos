@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body  ng-app="">
+
+    <div>
+       <label>Choose your Fav Subject</label>
+        <select ng-model="selectSub">
+            <option disabled>Select Your Subject</option>
+            <option value="Angular">Angular</option>
+            <option value="Java">Java</option>
+            <option value="PHP">PHP</option>
+            <option value="CD">CD</option>
+        </select>
+    </div>
+    <div>
+        <span ng-bind="selectSub"></span>
+    </div>
+</body>
+</html>

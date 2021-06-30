@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>demo of ng-repeat and ng-init</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body  ng-app="">
+    
+    <!-- <div ng-init="myVar = 'Paras'">
+            <span>{{myVar}}</span>
+    </div> -->
+
+    <div ng-init="mySkillSet = [
+                                 { name: 'PHP' ,extention: '.php' },   
+                                 { name: 'JAVA' ,extention: '.java' },
+                                 { name: 'JavaScript' ,extention: '.js' },
+                                 { name: 'CSHARP' ,extention: '.cs' },
+    
+                              ] ">
+        <span ng-repeat="eachLanguage in mySkillSet">
+                   Name:{{eachLanguage.name}}
+                   Extention - {{eachLanguage.extention}}<br>
+        </span>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>demo of ng-controller</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body  ng-app="myLanguageApp">
+       <div ng-controller="languages">
+            <button ng-click="">PHP</button>
+            <button ng-click="">Javascript</button>
+            <button ng-click="">Java</button>
+            <button ng-click="">DotNet</button>
+       
+            <p>
+                You Selected : {{myFavLanguage}}
+            </p>
+        </div>
+       
+        <script>
+            //step-1 : create one angular variable of type module
+            var application = angular.module('myLanguageApp',[]);
+           
+            application.controller('languages',function() {
+
+            });
+        </script>
+</body>
+</html>
