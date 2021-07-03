@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ng hide
+        </title>
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <body ng-app>
+       <div>
+        <input type="checkbox" ng-model="someVar">Hide/Unhide
+
+        <p ng-hide="someVar">I written something here<br>
+
+        </div>
+        <div>
+        <input type="checkbox" ng-model="someOtherVar">Hide/Unhide
+
+        <p ng-show="someOtherVar">I written something here
+        </p>
+    </div>
+    </body>
+</html>

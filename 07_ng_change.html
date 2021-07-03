@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ng hide
+        </title>
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <body ng-app = "myApp">
+       <div ng-controller="myController">
+            <p>Enter your text</p>
+            <input ng-change="stringLen()" type="text" ng-model="myValue">
+            <input ng-change="stringLen()" type="text" ng-model="myValue">
+            <p>Length of entered text is = {{ lengthString }}</p>
+       </div>
+       <script>
+          angular.module('myApp',[])
+            .controller('myController',function($scope){
+                $scope.lengthString =0;
+                $scope.stringLen = function(){
+                    $scope.lengthString++;
+                }       
+            });
+       </script>
+    </body>
+</html>
