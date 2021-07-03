@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ng class
+        </title>
+        <style>
+            .sky{
+                color: white;
+                background-color: lightblue;
+                padding: 20px;
+                font-family: "Verdana";
+            }
+            .tomato{
+                color: white;
+                background-color: coral;
+                padding: 20px;
+                font-family: "Verdana";
+            }
+            .darkCyan{
+                color: white;
+                background-color: DarkCyan;
+                padding: 20px;
+                font-family: "Verdana";
+            }
+            .hotPink{
+                color: white;
+                background-color: HotPink;
+                padding: 20px;
+                font-family: "Verdana";
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    </head>
+   
+    <body ng-app>
+      <select ng-model="myCard">
+            <option value="sky">Sky</option>
+            <option value="tomato">Tomato</option>
+            <option value="darkCyan">DarkCyan</option>
+            <option value="hotPink">HotPink</option>
+      </select>
+      <div  ng-class="myCard">
+            <h1>Hello</h1>
+            <h5>Prof.Paras Kalariya</h5>
+            <p>This is my Card</p>
+      </div>
+    </body>
+</html>
